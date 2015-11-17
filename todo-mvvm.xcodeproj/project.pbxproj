@@ -23,6 +23,7 @@
 		145301941BFB2A090011C78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145301971BFB2A090011C78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145301991BFB2A090011C78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145301A11BFB2CAF0011C78E /* todo-mvvm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "todo-mvvm-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BC21FCC774D49D16EFD9ACC /* Pods-todo-mvvm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todo-mvvm.release.xcconfig"; path = "Pods/Target Support Files/Pods-todo-mvvm/Pods-todo-mvvm.release.xcconfig"; sourceTree = "<group>"; };
 		A0C6C3532E03040E35EDFEE1 /* Pods_todo_mvvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todo_mvvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE691489615F8903D5FE4136 /* Pods-todo-mvvm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todo-mvvm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todo-mvvm/Pods-todo-mvvm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,12 +64,29 @@
 			children = (
 				1453018D1BFB2A090011C78E /* AppDelegate.swift */,
 				1453018F1BFB2A090011C78E /* ViewController.swift */,
+				1453019F1BFB2C2C0011C78E /* Views */,
+				145301A01BFB2C4C0011C78E /* Support */,
+			);
+			path = "todo-mvvm";
+			sourceTree = "<group>";
+		};
+		1453019F1BFB2C2C0011C78E /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				145301911BFB2A090011C78E /* Main.storyboard */,
 				145301941BFB2A090011C78E /* Assets.xcassets */,
 				145301961BFB2A090011C78E /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		145301A01BFB2C4C0011C78E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				145301A11BFB2CAF0011C78E /* todo-mvvm-Bridging-Header.h */,
 				145301991BFB2A090011C78E /* Info.plist */,
 			);
-			path = "todo-mvvm";
+			name = Support;
 			sourceTree = "<group>";
 		};
 		61BF1BCFCF6CE7DD1576B8E8 /* Frameworks */ = {
@@ -323,10 +341,14 @@
 			baseConfigurationReference = CE691489615F8903D5FE4136 /* Pods-todo-mvvm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "todo-mvvm/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igroomgrim.todo-mvvm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todo-mvvm/todo-mvvm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -335,10 +357,13 @@
 			baseConfigurationReference = 7BC21FCC774D49D16EFD9ACC /* Pods-todo-mvvm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "todo-mvvm/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igroomgrim.todo-mvvm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todo-mvvm/todo-mvvm-Bridging-Header.h";
 			};
 			name = Release;
 		};
