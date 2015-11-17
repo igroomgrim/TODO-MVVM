@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ToDoCell: UITableViewCell {
+class TODOCell: UITableViewCell {
     
     let descriptionLabel: UILabel
     

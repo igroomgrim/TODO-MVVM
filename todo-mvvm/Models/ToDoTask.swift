@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-class ToDoTask: Object {
+class TODOTask: Object {
     dynamic var text: String = ""
     dynamic var completed: Bool = false
     dynamic var createdAt: NSTimeInterval = NSDate().timeIntervalSince1970
