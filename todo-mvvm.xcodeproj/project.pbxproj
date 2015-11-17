@@ -15,6 +15,7 @@
 		145301A61BFB42F30011C78E /* ToDoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145301A51BFB42F30011C78E /* ToDoTask.swift */; };
 		145301A91BFB4CC10011C78E /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145301A81BFB4CC10011C78E /* ToDoCell.swift */; };
 		145301AB1BFB79C00011C78E /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145301AA1BFB79C00011C78E /* ToDoViewModel.swift */; };
+		145301AE1BFB7AD20011C78E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145301AD1BFB7AD20011C78E /* Store.swift */; };
 		AB67C302F51F7DA9AFD1871A /* Pods_todo_mvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C6C3532E03040E35EDFEE1 /* Pods_todo_mvvm.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		145301A51BFB42F30011C78E /* ToDoTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoTask.swift; path = Models/ToDoTask.swift; sourceTree = "<group>"; };
 		145301A81BFB4CC10011C78E /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoCell.swift; path = Views/ToDoCell.swift; sourceTree = "<group>"; };
 		145301AA1BFB79C00011C78E /* ToDoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoViewModel.swift; path = ViewModels/ToDoViewModel.swift; sourceTree = "<group>"; };
+		145301AD1BFB7AD20011C78E /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Store/Store.swift; sourceTree = "<group>"; };
 		7BC21FCC774D49D16EFD9ACC /* Pods-todo-mvvm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todo-mvvm.release.xcconfig"; path = "Pods/Target Support Files/Pods-todo-mvvm/Pods-todo-mvvm.release.xcconfig"; sourceTree = "<group>"; };
 		A0C6C3532E03040E35EDFEE1 /* Pods_todo_mvvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todo_mvvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE691489615F8903D5FE4136 /* Pods-todo-mvvm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todo-mvvm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todo-mvvm/Pods-todo-mvvm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				145301A71BFB42FE0011C78E /* Models */,
 				1453019F1BFB2C2C0011C78E /* Views */,
 				145301AC1BFB79C40011C78E /* ViewModels */,
+				145301AF1BFB7AD50011C78E /* Store */,
 				145301A01BFB2C4C0011C78E /* Support */,
 			);
 			path = "todo-mvvm";
@@ -112,6 +115,14 @@
 				145301AA1BFB79C00011C78E /* ToDoViewModel.swift */,
 			);
 			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		145301AF1BFB7AD50011C78E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				145301AD1BFB7AD20011C78E /* Store.swift */,
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 		61BF1BCFCF6CE7DD1576B8E8 /* Frameworks */ = {
@@ -256,6 +267,7 @@
 				145301AB1BFB79C00011C78E /* ToDoViewModel.swift in Sources */,
 				145301A61BFB42F30011C78E /* ToDoTask.swift in Sources */,
 				145301901BFB2A090011C78E /* ViewController.swift in Sources */,
+				145301AE1BFB7AD20011C78E /* Store.swift in Sources */,
 				1453018E1BFB2A090011C78E /* AppDelegate.swift in Sources */,
 				145301A91BFB4CC10011C78E /* ToDoCell.swift in Sources */,
 			);
