@@ -12,6 +12,7 @@
 		145301931BFB2A090011C78E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145301911BFB2A090011C78E /* Main.storyboard */; };
 		145301951BFB2A090011C78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145301941BFB2A090011C78E /* Assets.xcassets */; };
 		145301981BFB2A090011C78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145301961BFB2A090011C78E /* LaunchScreen.storyboard */; };
+		AB67C302F51F7DA9AFD1871A /* Pods_todo_mvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C6C3532E03040E35EDFEE1 /* Pods_todo_mvvm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		145301941BFB2A090011C78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145301971BFB2A090011C78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145301991BFB2A090011C78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC21FCC774D49D16EFD9ACC /* Pods-todo-mvvm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todo-mvvm.release.xcconfig"; path = "Pods/Target Support Files/Pods-todo-mvvm/Pods-todo-mvvm.release.xcconfig"; sourceTree = "<group>"; };
+		A0C6C3532E03040E35EDFEE1 /* Pods_todo_mvvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todo_mvvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE691489615F8903D5FE4136 /* Pods-todo-mvvm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todo-mvvm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todo-mvvm/Pods-todo-mvvm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB67C302F51F7DA9AFD1871A /* Pods_todo_mvvm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1453018C1BFB2A090011C78E /* todo-mvvm */,
 				1453018B1BFB2A090011C78E /* Products */,
+				D862F115C3B219AF8853875A /* Pods */,
+				61BF1BCFCF6CE7DD1576B8E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "todo-mvvm";
 			sourceTree = "<group>";
 		};
+		61BF1BCFCF6CE7DD1576B8E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0C6C3532E03040E35EDFEE1 /* Pods_todo_mvvm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D862F115C3B219AF8853875A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE691489615F8903D5FE4136 /* Pods-todo-mvvm.debug.xcconfig */,
+				7BC21FCC774D49D16EFD9ACC /* Pods-todo-mvvm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1453019C1BFB2A090011C78E /* Build configuration list for PBXNativeTarget "todo-mvvm" */;
 			buildPhases = (
+				DFD0016D559E43637B5C705F /* Check Pods Manifest.lock */,
 				145301861BFB2A090011C78E /* Sources */,
 				145301871BFB2A090011C78E /* Frameworks */,
 				145301881BFB2A090011C78E /* Resources */,
+				88FAE584C47B8F553B3BA5C5 /* Embed Pods Frameworks */,
+				89F3CF0190E7BDE8F9628EBF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88FAE584C47B8F553B3BA5C5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-todo-mvvm/Pods-todo-mvvm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89F3CF0190E7BDE8F9628EBF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-todo-mvvm/Pods-todo-mvvm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD0016D559E43637B5C705F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		145301861BFB2A090011C78E /* Sources */ = {
@@ -245,6 +320,7 @@
 		};
 		1453019D1BFB2A090011C78E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE691489615F8903D5FE4136 /* Pods-todo-mvvm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "todo-mvvm/Info.plist";
@@ -256,6 +332,7 @@
 		};
 		1453019E1BFB2A090011C78E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC21FCC774D49D16EFD9ACC /* Pods-todo-mvvm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "todo-mvvm/Info.plist";
@@ -284,6 +361,7 @@
 				1453019E1BFB2A090011C78E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
