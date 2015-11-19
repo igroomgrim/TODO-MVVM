@@ -6,5 +6,6 @@ use_frameworks!
 target 'todo-mvvm' do
 pod 'ReactiveCocoa', '4.0.4-alpha-1'
 pod 'RealmSwift'
+pod 'SnapKit', '~> 0.15.0'
 end
 
